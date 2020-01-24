@@ -1,0 +1,76 @@
+  *
+	  {
+		margin: 0;
+		padding: 0p
+	}
+	 body
+	{
+		background-image: linear-gradient(rgba(2,5,2.-10), rgba(2,5,2.-10)), url(pc.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	 #Capa_1
+	{
+		width: 300px;
+		margin: 2% auto;
+		display: block;
+	}
+	 .face,.man,.line
+	{
+		fill-opacity: 0;
+		stroke: black;
+		stroke-width: 12px;
+		stroke-dashoffset: 1;
+		stroke-dasharray: 3000;
+	}
+	 .man
+	{
+		animation: man 6s ease-in-out;
+	}
+	 @keyframes man
+	{
+		0%
+		{
+			stroke-dashoffset: 3000;
+		}
+		100%
+		{
+			stroke-dashoffset: 0;
+		}
+	}
+	 .face{
+		animation: face 12s ease-in-out;
+		}
+       @keyframes face
+	{
+		0%
+		{
+			stroke-dashoffset: 3000;
+		}
+		50%
+		{
+			stroke-dashoffset: 3000;
+		}
+		100%
+		{
+			stroke-dashoffset: 0;
+		}
+		}
+	 .line{
+		animation: man 14s ease-in-out;
+	}
+	@keyframes face
+	{
+		0%
+		{
+			stroke-dashoffset: 2000;
+		}
+		100%
+		{
+			stroke-dashoffset: 2000;
+		}
+		200%
+		{
+			stroke-dashoffset: 0;
+		}
+	}
